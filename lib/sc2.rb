@@ -1,8 +1,8 @@
 require 'rubygems'
 require 'bindata'
 require 'bzip2-ruby'
-Dir['./wrappers/*.rb'].each { |f| require f }
-Dir['./magick/*.rb'].each { |f| require f }
+Dir[File.dirname(__FILE__) + '/sc2/wrappers/*.rb'].each { |f| require f }
+Dir[File.dirname(__FILE__) + '/sc2/magick/*.rb'].each { |f| require f }
 
 module Sc2
   class Replay
